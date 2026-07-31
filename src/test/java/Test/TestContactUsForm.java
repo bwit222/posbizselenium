@@ -22,9 +22,7 @@ public class TestContactUsForm extends Base {
 	public void TestcontactUsForm() throws Exception {
 		log.info("========== Starting Contact Us Form Test ==========");
 		
-		System.out.println("Shubham has been added to the code");
-		System.out.println("Shubham has been added to the code");
-		System.out.println("Shubham has been added to the code");
+
 
 	
 		
