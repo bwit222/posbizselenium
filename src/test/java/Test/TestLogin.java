@@ -49,26 +49,6 @@ public class TestLogin extends Base {
 	public void LoginTestCorrectDetail() {
 		log.info("========== Starting Login Test ==========");
 		
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		System.out.println("Git hub update for testing");
-		
-		
 		
 		
 		try {

@@ -1,77 +1,23 @@
-12:44:02.964 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
-12:44:05.664 [TestNG-tests-1] INFO  Test.TestContactUsForm - Browser got launched successfully
-12:44:05.672 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser got launched successfully
-12:44:06.959 [TestNG-tests-1] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
-12:44:06.959 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
-12:44:07.014 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Starting Contact Us Form Test ==========
-12:44:07.015 [TestNG-tests-1] INFO  Test.TestContactUsForm - Creating LandingPage object
-12:44:07.041 [TestNG-tests-1] INFO  Test.TestContactUsForm - Clicking on Contact Us Link
-12:44:10.421 [TestNG-tests-2] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
-12:44:10.421 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
-12:44:10.423 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Login Test ==========
-12:44:10.424 [TestNG-tests-2] INFO  Test.TestContactUsForm - Creating LandingPage object
-12:44:10.424 [TestNG-tests-2] INFO  Test.TestContactUsForm - Clicking on Login Link
-12:44:16.680 [TestNG-tests-2] INFO  Test.TestContactUsForm - Creating LoginPage object
-12:44:16.684 [TestNG-tests-2] INFO  Test.TestContactUsForm - Entering User Email: shubhamtest333@gmail.com
-12:44:16.757 [TestNG-tests-1] INFO  Test.TestContactUsForm - Contact Us Link clicked successfully
-12:44:16.758 [TestNG-tests-1] INFO  Test.TestContactUsForm - Creating ContactUsForm object
-12:44:16.770 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Entering First Name: Rahul
-12:44:16.828 [TestNG-tests-2] INFO  Test.TestContactUsForm - Entering Password: Bwit@123
-12:44:16.881 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Entering Last Name: Kumar
-12:44:17.057 [TestNG-tests-2] INFO  Test.TestContactUsForm - Clicking on Sign In Button
-12:44:17.127 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Entering Company Name: Broadway Infotech Pvt Ltd
-12:44:17.295 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Entering Email: rahultest123@gmail.com
-12:44:17.495 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Entering Phone: 423456524
-12:44:17.741 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Entering Subject: Test Contact Us Form
-12:44:17.928 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Entering Message: This is a test message for contact us form. Please ignore this message.
-12:44:18.108 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Clicking on Submit Button
-12:44:18.108 [TestNG-tests-1] INFO  Test.TestContactUsForm - All Contact Us form fields filled successfully
-12:44:20.124 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Contact Us Form Test Completed Successfully ==========
-12:44:20.316 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
-12:44:20.512 [TestNG-tests-1] INFO  Test.TestContactUsForm - Browser closed successfully
-12:44:20.512 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Test Cleanup Completed ==========
-12:44:21.962 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
-12:44:22.181 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser closed successfully
-12:44:22.182 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
-12:44:22.185 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
-12:44:23.486 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser got launched successfully
-12:44:28.246 [TestNG-tests-2] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
-12:44:28.246 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
-12:44:28.248 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Login Test with Incorrect Details ==========
-12:44:28.248 [TestNG-tests-2] INFO  Test.TestContactUsForm - Creating LandingPage object
-12:44:28.250 [TestNG-tests-2] INFO  Test.TestContactUsForm - Clicking on Login Link
-12:44:33.531 [TestNG-tests-2] INFO  Test.TestContactUsForm - Creating LoginPage object
-12:44:33.532 [TestNG-tests-2] INFO  Test.TestContactUsForm - Entering User Email: shubhamtest333@gmail.com
-12:44:33.655 [TestNG-tests-2] INFO  Test.TestContactUsForm - Entering Password: Bwit@12345
-12:44:33.816 [TestNG-tests-2] INFO  Test.TestContactUsForm - Clicking on Sign In Button
-12:44:36.649 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
-12:44:36.840 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser closed successfully
-12:44:36.840 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
-12:52:46.367 [main] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
-12:52:48.730 [main] INFO  Test.TestContactUsForm - Browser got launched successfully
-12:52:53.343 [main] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
-12:52:53.343 [main] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
-12:52:53.359 [main] INFO  Test.TestContactUsForm - ========== Starting Login Test ==========
-12:52:53.359 [main] INFO  Test.TestContactUsForm - Creating LandingPage object
-12:52:53.383 [main] INFO  Test.TestContactUsForm - Clicking on Login Link
-12:53:00.134 [main] INFO  Test.TestContactUsForm - Creating LoginPage object
-12:53:00.143 [main] INFO  Test.TestContactUsForm - Entering User Email: shubhamtest333@gmail.com
-12:53:00.259 [main] INFO  Test.TestContactUsForm - Entering Password: Bwit@123
-12:53:00.406 [main] INFO  Test.TestContactUsForm - Clicking on Sign In Button
-12:53:04.889 [main] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
-12:53:05.119 [main] INFO  Test.TestContactUsForm - Browser closed successfully
-12:53:05.119 [main] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
-12:53:05.123 [main] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
-12:53:06.598 [main] INFO  Test.TestContactUsForm - Browser got launched successfully
-12:53:11.279 [main] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
-12:53:11.280 [main] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
-12:53:11.283 [main] INFO  Test.TestContactUsForm - ========== Starting Login Test with Incorrect Details ==========
-12:53:11.283 [main] INFO  Test.TestContactUsForm - Creating LandingPage object
-12:53:11.283 [main] INFO  Test.TestContactUsForm - Clicking on Login Link
-12:53:17.332 [main] INFO  Test.TestContactUsForm - Creating LoginPage object
-12:53:17.334 [main] INFO  Test.TestContactUsForm - Entering User Email: shubhamtest333@gmail.com
-12:53:17.448 [main] INFO  Test.TestContactUsForm - Entering Password: Bwit@12345
-12:53:17.591 [main] INFO  Test.TestContactUsForm - Clicking on Sign In Button
-12:53:20.520 [main] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
-12:53:20.743 [main] INFO  Test.TestContactUsForm - Browser closed successfully
-12:53:20.745 [main] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
+14:55:09.114 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Clicking on Submit Button
+14:55:09.129 [TestNG-tests-1] INFO  Test.TestContactUsForm - All Contact Us form fields filled successfully
+14:55:11.147 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Contact Us Form Test Completed Successfully ==========
+14:55:11.302 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+14:55:11.624 [TestNG-tests-1] INFO  Test.TestContactUsForm - Browser closed successfully
+14:55:11.625 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Test Cleanup Completed ==========
+14:55:13.544 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+14:55:13.849 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser closed successfully
+14:55:13.850 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
+14:55:13.856 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
+14:55:15.379 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser got launched successfully
+14:55:19.316 [TestNG-tests-2] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
+14:55:19.317 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
+14:55:19.320 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Login Test with Incorrect Details ==========
+14:55:19.321 [TestNG-tests-2] INFO  Test.TestContactUsForm - Creating LandingPage object
+14:55:19.323 [TestNG-tests-2] INFO  Test.TestContactUsForm - Clicking on Login Link
+14:55:20.717 [TestNG-tests-2] INFO  Test.TestContactUsForm - Creating LoginPage object
+14:55:20.718 [TestNG-tests-2] INFO  Test.TestContactUsForm - Entering User Email: shubhamtest333@gmail.com
+14:55:20.835 [TestNG-tests-2] INFO  Test.TestContactUsForm - Entering Password: Bwit@12345
+14:55:20.947 [TestNG-tests-2] INFO  Test.TestContactUsForm - Clicking on Sign In Button
+14:55:23.838 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+14:55:24.075 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser closed successfully
+14:55:24.076 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
