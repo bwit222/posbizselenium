@@ -45,8 +45,8 @@ public class TestLogin extends Base {
 }
 	
 	
-	@Test
-	public void LoginTestCorrectDetail() {
+	//@Test
+	public void CorrectDetail() {
 		log.info("========== Starting Login Test ==========");
 		
 		
@@ -67,13 +67,15 @@ public class TestLogin extends Base {
 			log.info("Entering Password: " + prop.getProperty("c_password"));
 			loginPage.Password().sendKeys(prop.getProperty("c_password"));
 			
+			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
 			log.info("Clicking on Sign In Button");			
 			loginPage.SignInButton().click();
 			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
 			
 			// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
 			boolean successVisible = loginPage.SuccessMessage().isDisplayed();
-			Assert.assertTrue(successVisible, "Success message is not displayed - login may have failed");
+			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
 			
 			
 		} catch (Exception e) {
@@ -83,9 +85,79 @@ public class TestLogin extends Base {
 		}
 	}
 	
-	@Test
-	public void LoginTestWrongDetail() {
+	//@Test
+	public void InvalidDetail() {
 		log.info("========== Starting Login Test with Incorrect Details ==========");
+		
+		try {
+			log.info("Creating LandingPage object");
+			LandingPage landingPage = new LandingPage(driver);
+			
+			log.info("Clicking on Login Link");
+			landingPage.LoginLink().click();
+			
+			log.info("Creating LoginPage object");
+			LoginPage loginPage = new LoginPage(driver);
+			
+			log.info("Entering User Email: " + prop.getProperty("invalidemail"));
+			loginPage.UserEmail().sendKeys(prop.getProperty("invalidemail"));
+			
+			log.info("Entering Password: " + prop.getProperty("w_password"));
+			loginPage.Password().sendKeys(prop.getProperty("w_password"));
+			
+			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
+			log.info("Clicking on Sign In Button");			
+			loginPage.SignInButton().click();
+			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
+			
+			// ASSERT: test passes only if ErrorMessage() is displayed, otherwise fail
+			boolean errorVisible = loginPage.ErrorMessage().isDisplayed();
+			Assert.assertTrue(errorVisible, "Error message is displayed - login may have unexpectedly succeeded");
+			
+			
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test with Incorrect Details: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test with Incorrect Details: " + e.getMessage(), e);
+		}
+	}
+	
+	//@Test
+	public void EmptyDetail() {
+		log.info("========== Starting Login Test with Empty Details ==========");
+		
+		try {
+			log.info("Creating LandingPage object");
+			LandingPage landingPage = new LandingPage(driver);
+			
+			log.info("Clicking on Login Link");
+			landingPage.LoginLink().click();
+			
+			log.info("Creating LoginPage object");
+			LoginPage loginPage = new LoginPage(driver);
+			
+			//Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
+			log.info("Clicking on Sign In Button without entering any details");			
+			loginPage.SignInButton().click();
+			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
+			
+			// ASSERT: test passes only if ErrorMessage() is displayed, otherwise fail
+			boolean errorVisible = loginPage.BlankEmailErrorMessage().isDisplayed();
+			Assert.assertTrue(errorVisible, "Error message is displayed - login may have unexpectedly succeeded");
+			
+			
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test with Empty Details: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test with Empty Details: " + e.getMessage(), e);
+		}
+	}
+	
+	//@Test
+	public void ValidEmailInvalidPassword() {
+		log.info("========== Starting Login Test with Valid Email and Invalid Password ==========");
 		
 		try {
 			log.info("Creating LandingPage object");
@@ -103,24 +175,27 @@ public class TestLogin extends Base {
 			log.info("Entering Password: " + prop.getProperty("w_password"));
 			loginPage.Password().sendKeys(prop.getProperty("w_password"));
 			
+			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
 			log.info("Clicking on Sign In Button");			
 			loginPage.SignInButton().click();
 			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
 			
 			// ASSERT: test passes only if ErrorMessage() is displayed, otherwise fail
 			boolean errorVisible = loginPage.ErrorMessage().isDisplayed();
-			Assert.assertTrue(errorVisible, "Error message is not displayed - login may have unexpectedly succeeded");
+			Assert.assertTrue(errorVisible, "Error message is displayed - login may have unexpectedly succeeded");
 			
 			
 		} catch (Exception e) {
-			log.error("Error occurred during Login Test with Incorrect Details: " + e.getMessage());
+			log.error("Error occurred during Login Test with Valid Email and Invalid Password: " + e.getMessage());
 			// Make sure exception causes test failure
-			Assert.fail("Exception during Login Test with Incorrect Details: " + e.getMessage(), e);
-		}
+			Assert.fail("Exception during Login Test with Valid Email and Invalid Password: " + e.getMessage(), e);
+		} 		
 	}
 	
-	public void LoginTestEmptyDetail() {
-		log.info("========== Starting Login Test with Empty Details ==========");
+	//@Test	
+	public void InvalidEmail() {
+		log.info("========== Starting Login Test with Invalid Email ==========");
 		
 		try {
 			log.info("Creating LandingPage object");
@@ -132,22 +207,236 @@ public class TestLogin extends Base {
 			log.info("Creating LoginPage object");
 			LoginPage loginPage = new LoginPage(driver);
 			
-			log.info("Clicking on Sign In Button without entering any details");			
+			log.info("Entering User Email: " + prop.getProperty("invalidemail"));
+			loginPage.UserEmail().sendKeys(prop.getProperty("invalidemail"));
+			
+			log.info("Entering Password: " + prop.getProperty("w_password"));
+			loginPage.Password().sendKeys(prop.getProperty("w_password"));
+			
+			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
+			log.info("Clicking on Sign In Button");			
 			loginPage.SignInButton().click();
 			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
 			
 			// ASSERT: test passes only if ErrorMessage() is displayed, otherwise fail
 			boolean errorVisible = loginPage.ErrorMessage().isDisplayed();
-			Assert.assertTrue(errorVisible, "Error message is not displayed - login may have unexpectedly succeeded");
-			
-			
+			Assert.assertTrue(errorVisible, "Error message is displayed - login may have unexpectedly succeeded");
+						
 		} catch (Exception e) {
-			log.error("Error occurred during Login Test with Empty Details: " + e.getMessage());
+			log.error("Error occurred during Login Test with Invalid Email: " + e.getMessage());
 			// Make sure exception causes test failure
-			Assert.fail("Exception during Login Test with Empty Details: " + e.getMessage(), e);
+			Assert.fail("Exception during Login Test with Invalid Email: " + e.getMessage(), e);
 		}
 	}
+
+	//@Test	
+	public void EmptyEmail() {
+		log.info("========== Starting Login Test with Empty Email ==========");
 		
+		try {
+			log.info("Creating LandingPage object");
+			LandingPage landingPage = new LandingPage(driver);
+			
+			log.info("Clicking on Login Link");
+			landingPage.LoginLink().click();
+			
+			log.info("Creating LoginPage object");
+			LoginPage loginPage = new LoginPage(driver);
+			
+			log.info("Entering Password: " + prop.getProperty("w_password"));
+			loginPage.Password().sendKeys(prop.getProperty("w_password"));
+			
+			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
+			log.info("Clicking on Sign In Button");			
+			loginPage.SignInButton().click();
+			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
+			
+			// ASSERT: test passes only if BlankEmailErrorMessage() is displayed, otherwise fail
+			boolean errorVisible = loginPage.BlankEmailErrorMessage().isDisplayed();
+			Assert.assertTrue(errorVisible, "Blank email error message is displayed - login may have unexpectedly succeeded");
+						
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test with Empty Email: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test with Empty Email: " + e.getMessage(), e);
+		}
+	}
+	
+	//@Test	
+	public void EmptyPassword() {
+		log.info("========== Starting Login Test with Empty Password ==========");
+		
+		try {
+			log.info("Creating LandingPage object");
+			LandingPage landingPage = new LandingPage(driver);
+			
+			log.info("Clicking on Login Link");
+			landingPage.LoginLink().click();
+			
+			log.info("Creating LoginPage object");
+			LoginPage loginPage = new LoginPage(driver);
+			
+			log.info("Entering User Email: " + prop.getProperty("useremail"));
+			loginPage.UserEmail().sendKeys(prop.getProperty("useremail"));
+			
+			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
+			log.info("Clicking on Sign In Button");			
+			loginPage.SignInButton().click();
+			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
+			
+			// ASSERT: test passes only if BlankPasswordErrorMessage() is displayed, otherwise fail
+			boolean errorVisible = loginPage.BlankPasswordErrorMessage().isDisplayed();
+			Assert.assertTrue(errorVisible, "Blank password error message is displayed - login may have unexpectedly succeeded");
+						
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test with Empty Password: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test with Empty Password: " + e.getMessage(), e);
+		}
+	}
+
+	//@Test
+	public void ValidEmailWithSpaces() {
+		log.info("========== Starting Login Test with Valid Email and Spaces ==========");
+		
+		try {
+			log.info("Creating LandingPage object");
+			LandingPage landingPage = new LandingPage(driver);
+			
+			log.info("Clicking on Login Link");
+			landingPage.LoginLink().click();
+			
+			log.info("Creating LoginPage object");
+			LoginPage loginPage = new LoginPage(driver);
+			
+			log.info("Entering User Email with spaces: " + prop.getProperty("emailspace"));
+			loginPage.UserEmail().sendKeys("   " + prop.getProperty("emailspace") + "   ");
+			
+			log.info("Entering Password: " + prop.getProperty("c_password"));
+			loginPage.Password().sendKeys(prop.getProperty("c_password"));
+			
+			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
+			log.info("Clicking on Sign In Button");			
+			loginPage.SignInButton().click();
+			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
+			
+			// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+			boolean successVisible = loginPage.SuccessMessage().isDisplayed();
+			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+						
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test with Valid Email and Spaces: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test with Valid Email and Spaces: " + e.getMessage(), e);
+		}
+	}
+	
+	
+	public void RememberMe() {
+		log.info("========== Starting Login Test with Remember Me functionality ==========");
+		
+		try {
+			log.info("Creating LandingPage object");
+			LandingPage landingPage = new LandingPage(driver);
+			
+			log.info("Clicking on Login Link");
+			landingPage.LoginLink().click();
+			
+			log.info("Creating LoginPage object");
+			LoginPage loginPage = new LoginPage(driver);
+			
+			log.info("Entering User Email: " + prop.getProperty("useremail"));
+			loginPage.UserEmail().sendKeys(prop.getProperty("useremail"));
+			
+			log.info("Entering Password: " + prop.getProperty("c_password"));
+			loginPage.Password().sendKeys(prop.getProperty("c_password"));
+			
+			log.info("Clicking on Remember Me Checkbox");
+			loginPage.RememberMeCheckbox().click();
+			
+			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			
+			log.info("Clicking on Sign In Button");			
+			loginPage.SignInButton().click();
+			//Thread.sleep(5000); // Wait for 5 seconds to allow the login process to complete
+			
+			// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+			boolean successVisible = loginPage.SuccessMessage().isDisplayed();
+			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+						
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test with Remember Me functionality: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test with Remember Me functionality: " + e.getMessage(), e);
+		}
+
+	}
+	
+	@Test
+	public void ForgotPasswordLink() {
+		log.info("========== Starting Login Test with Forgot Password Link functionality ==========");
+		
+		try {
+			log.info("Creating LandingPage object");
+			LandingPage landingPage = new LandingPage(driver);
+			
+			log.info("Clicking on Login Link");
+			landingPage.LoginLink().click();
+			
+			log.info("Creating LoginPage object");
+			LoginPage loginPage = new LoginPage(driver);
+			
+			log.info("Clicking on Forgot Password Link");
+			loginPage.ForgotPasswordLink().click();
+			
+			// ASSERT: test passes only if the URL contains "reset-password", otherwise fail
+			String currentURL = driver.getCurrentUrl();
+			Assert.assertTrue(currentURL.contains("auth.recover_password"), "Forgot Password link did not navigate to the expected page");
+						
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test with Forgot Password Link functionality: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test with Forgot Password Link functionality: " + e.getMessage(), e);
+		}
+	}
+	
+	@Test
+	public void RegisterLink() {
+		log.info("========== Starting Login Test with Register Link functionality ==========");
+		
+		try {
+			log.info("Creating LandingPage object");
+			LandingPage landingPage = new LandingPage(driver);
+			
+			log.info("Clicking on Login Link");
+			landingPage.LoginLink().click();
+			
+			log.info("Creating LoginPage object");
+			LoginPage loginPage = new LoginPage(driver);
+			
+			log.info("Clicking on Register Link");
+			loginPage.RegisterLink().click();
+			
+			// ASSERT: test passes only if the URL contains "register", otherwise fail
+			String currentURL = driver.getCurrentUrl();
+			Assert.assertTrue(currentURL.contains("profiles.add"), "Register link did not navigate to the expected page");
+						
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test with Register Link functionality: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test with Register Link functionality: " + e.getMessage(), e);
+		}
+	}
+	
+	
+
 }
+
+
+
 
 

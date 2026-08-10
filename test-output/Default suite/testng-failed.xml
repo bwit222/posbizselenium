@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.TestLogin">
+      <class name="Test.TestResetPassword">
         <methods>
-          <include name="closer"/>
           <include name="openURL"/>
-          <include name="loginTest"/>
+          <include name="ValidResetEmail"/>
+          <include name="InvalidResetEmail"/>
+          <include name="closer"/>
         </methods>
-      </class> <!-- Test.TestLogin -->
+      </class> <!-- Test.TestResetPassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

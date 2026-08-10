@@ -44,6 +44,13 @@ public class LoginPage {
 	@FindBy(xpath="//button[normalize-space()='×']")
 	private WebElement errormessageclosebutton;
 	
+	@FindBy(xpath="//span[@id='login_main_login_error_message']//p[contains(text(),'The')]")	
+	private WebElement blankemailerrormessage;
+	
+	@FindBy(xpath="//span[@id='psw_main_login_error_message']//p[contains(text(),'The')]")
+	private WebElement blankpassworderrormessage;
+	
+	
 	
 	public WebElement UserEmail() {
 		return useremail;
@@ -85,4 +92,11 @@ public class LoginPage {
 		return errormessageclosebutton;
 	}
 	
+	public WebElement BlankEmailErrorMessage() {
+		return blankemailerrormessage;
+	}
+	
+	public WebElement BlankPasswordErrorMessage() {
+		return blankpassworderrormessage;
+	}
 }
