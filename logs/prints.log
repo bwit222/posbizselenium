@@ -1,23 +1,80 @@
-14:55:09.114 [TestNG-tests-1] DEBUG Test.TestContactUsForm - Clicking on Submit Button
-14:55:09.129 [TestNG-tests-1] INFO  Test.TestContactUsForm - All Contact Us form fields filled successfully
-14:55:11.147 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Contact Us Form Test Completed Successfully ==========
-14:55:11.302 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
-14:55:11.624 [TestNG-tests-1] INFO  Test.TestContactUsForm - Browser closed successfully
-14:55:11.625 [TestNG-tests-1] INFO  Test.TestContactUsForm - ========== Test Cleanup Completed ==========
-14:55:13.544 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
-14:55:13.849 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser closed successfully
-14:55:13.850 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
-14:55:13.856 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
-14:55:15.379 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser got launched successfully
-14:55:19.316 [TestNG-tests-2] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
-14:55:19.317 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
-14:55:19.320 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Login Test with Incorrect Details ==========
-14:55:19.321 [TestNG-tests-2] INFO  Test.TestContactUsForm - Creating LandingPage object
-14:55:19.323 [TestNG-tests-2] INFO  Test.TestContactUsForm - Clicking on Login Link
-14:55:20.717 [TestNG-tests-2] INFO  Test.TestContactUsForm - Creating LoginPage object
-14:55:20.718 [TestNG-tests-2] INFO  Test.TestContactUsForm - Entering User Email: shubhamtest333@gmail.com
-14:55:20.835 [TestNG-tests-2] INFO  Test.TestContactUsForm - Entering Password: Bwit@12345
-14:55:20.947 [TestNG-tests-2] INFO  Test.TestContactUsForm - Clicking on Sign In Button
-14:55:23.838 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
-14:55:24.075 [TestNG-tests-2] INFO  Test.TestContactUsForm - Browser closed successfully
-14:55:24.076 [TestNG-tests-2] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
+15:19:37.057 [main] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
+15:19:37.079 [main] INFO  Test.TestContactUsForm - ========== Starting Login Test with Forgot Password Link functionality ==========
+15:19:37.079 [main] INFO  Test.TestContactUsForm - Creating LandingPage object
+15:19:37.096 [main] INFO  Test.TestContactUsForm - Clicking on Login Link
+15:19:43.507 [main] INFO  Test.TestContactUsForm - Creating LoginPage object
+15:19:43.516 [main] INFO  Test.TestContactUsForm - Clicking on Forgot Password Link
+15:19:46.344 [main] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+15:19:47.448 [main] INFO  Test.TestContactUsForm - Browser closed successfully
+15:19:47.449 [main] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
+15:21:01.142 [main] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
+15:21:04.514 [main] INFO  Test.TestContactUsForm - Browser got launched successfully
+15:21:11.911 [main] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
+15:21:11.911 [main] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
+15:21:11.927 [main] INFO  Test.TestContactUsForm - ========== Starting Login Test with Forgot Password Link functionality ==========
+15:21:11.927 [main] INFO  Test.TestContactUsForm - Creating LandingPage object
+15:21:11.949 [main] INFO  Test.TestContactUsForm - Clicking on Login Link
+15:21:18.265 [main] INFO  Test.TestContactUsForm - Creating LoginPage object
+15:21:18.265 [main] INFO  Test.TestContactUsForm - Clicking on Forgot Password Link
+15:21:20.962 [main] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+15:21:21.351 [main] INFO  Test.TestContactUsForm - Browser closed successfully
+15:21:21.352 [main] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
+15:24:00.579 [main] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
+15:24:04.292 [main] INFO  Test.TestContactUsForm - Browser got launched successfully
+15:24:11.321 [main] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
+15:24:11.321 [main] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
+15:24:11.341 [main] INFO  Test.TestContactUsForm - ========== Starting Login Test with Forgot Password Link functionality ==========
+15:24:11.341 [main] INFO  Test.TestContactUsForm - Creating LandingPage object
+15:24:11.367 [main] INFO  Test.TestContactUsForm - Clicking on Login Link
+15:24:17.870 [main] INFO  Test.TestContactUsForm - Creating LoginPage object
+15:24:17.873 [main] INFO  Test.TestContactUsForm - Clicking on Forgot Password Link
+15:24:20.706 [main] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+15:24:21.275 [main] INFO  Test.TestContactUsForm - Browser closed successfully
+15:24:21.276 [main] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
+15:24:21.281 [main] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
+15:24:23.350 [main] INFO  Test.TestContactUsForm - Browser got launched successfully
+15:24:30.688 [main] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
+15:24:30.688 [main] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
+15:24:30.691 [main] INFO  Test.TestContactUsForm - ========== Starting Login Test with Register Link functionality ==========
+15:24:30.693 [main] INFO  Test.TestContactUsForm - Creating LandingPage object
+15:24:30.694 [main] INFO  Test.TestContactUsForm - Clicking on Login Link
+15:24:36.677 [main] INFO  Test.TestContactUsForm - Creating LoginPage object
+15:24:36.678 [main] INFO  Test.TestContactUsForm - Clicking on Register Link
+15:24:39.896 [main] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+15:24:40.288 [main] INFO  Test.TestContactUsForm - Browser closed successfully
+15:24:40.289 [main] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
+15:49:32.092 [main] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
+15:49:35.627 [main] INFO  Test.TestContactUsForm - Browser got launched successfully
+15:49:43.302 [main] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
+15:49:43.302 [main] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
+15:49:43.318 [main] INFO  Test.TestContactUsForm - ========== Starting Invalid Reset Password Test ==========
+15:49:43.318 [main] INFO  Test.TestContactUsForm - Creating LandingPage object
+15:49:43.339 [main] DEBUG Test.TestContactUsForm - Clicking on Login Link
+15:49:50.190 [main] INFO  Test.TestContactUsForm - Creating LoginPage object
+15:49:53.013 [main] INFO  Test.TestContactUsForm - Entering Invalid User Email: null
+15:49:53.083 [main] ERROR Test.TestContactUsForm - Error occurred during Invalid Reset Password Test: Keys to send should be a not null CharSequence
+15:49:53.117 [main] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+15:49:53.565 [main] INFO  Test.TestContactUsForm - Browser closed successfully
+15:49:53.572 [main] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
+15:49:53.584 [main] INFO  Test.TestContactUsForm - ========== Starting Test Setup ==========
+15:49:55.930 [main] INFO  Test.TestContactUsForm - Browser got launched successfully
+15:50:03.076 [main] INFO  Test.TestContactUsForm - Navigate to the application URL: https://www.poscentral.biz/	  
+15:50:03.076 [main] INFO  Test.TestContactUsForm - ========== Test Setup Completed ==========
+15:50:03.076 [main] INFO  Test.TestContactUsForm - ========== Starting Reset Password Test ==========
+15:50:03.076 [main] INFO  Test.TestContactUsForm - Creating LandingPage object
+15:50:03.076 [main] DEBUG Test.TestContactUsForm - Clicking on Login Link
+15:50:10.095 [main] INFO  Test.TestContactUsForm - Creating LoginPage object
+15:50:12.766 [main] INFO  Test.TestContactUsForm - Entering User Email: invalidemail@invalid.com
+15:50:13.460 [main] INFO  Test.TestContactUsForm - Clicking on Reset Button
+15:50:23.853 [main] ERROR Test.TestContactUsForm - Error occurred during Login Test: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='cm-notification-content notification-content cm-auto-hide alert-success']"}
+  (Session info: chrome=151.0.7922.76)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25516237742f3cd8312195613f72aeb6, findElement {using=xpath, value=//div[@class='cm-notification-content notification-content cm-auto-hide alert-success']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60561}, goog:processID: 11200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60561/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25516237742f3cd8312195613f72aeb6
+15:50:23.862 [main] INFO  Test.TestContactUsForm - ========== Starting Test Cleanup ==========
+15:50:24.134 [main] INFO  Test.TestContactUsForm - Browser closed successfully
+15:50:24.134 [main] INFO  Test.TestContactUsForm - ========== Ending Login Test ==========
