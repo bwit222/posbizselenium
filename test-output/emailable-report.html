@@ -8,98 +8,31 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">52,991</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">21</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">498,104</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Test.TestResetPassword</td><td><a href="#m0">InvalidResetEmail</a></td><td rowspan="1">1786357183306</td><td rowspan="1">9792</td></tr><tr class="failedeven"><td><a href="#m1">ValidResetEmail</a></td><td rowspan="1">1786357203076</td><td rowspan="1">20777</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Test.TestLogin</td><td><a href="#m0">InvalidDetail</a></td><td rowspan="1">1786438206813</td><td rowspan="1">25675</td></tr><tr class="failedeven"><td><a href="#m1">RememberMe</a></td><td rowspan="1">1786438286918</td><td rowspan="1">25440</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">Test.TestLogin</td><td><a href="#m2">CorrectDetail</a></td><td rowspan="1">1786438083703</td><td rowspan="1">29229</td></tr><tr class="passedeven"><td><a href="#m3">EmptyDetail</a></td><td rowspan="1">1786438119910</td><td rowspan="1">4382</td></tr><tr class="passedeven"><td><a href="#m4">EmptyEmail</a></td><td rowspan="1">1786438130743</td><td rowspan="1">24184</td></tr><tr class="passedeven"><td><a href="#m5">EmptyPassword</a></td><td rowspan="1">1786438161347</td><td rowspan="1">24308</td></tr><tr class="passedeven"><td><a href="#m6">ForgotPasswordLink</a></td><td rowspan="1">1786438192858</td><td rowspan="1">6582</td></tr><tr class="passedeven"><td><a href="#m7">InvalidEmail</a></td><td rowspan="1">1786438238882</td><td rowspan="1">26764</td></tr><tr class="passedeven"><td><a href="#m8">RegisterLink</a></td><td rowspan="1">1786438274047</td><td rowspan="1">6097</td></tr><tr class="passedeven"><td><a href="#m9">ValidEmailInvalidPassword</a></td><td rowspan="1">1786438319015</td><td rowspan="1">27313</td></tr><tr class="passedeven"><td><a href="#m10">ValidEmailWithSpaces</a></td><td rowspan="1">1786438352941</td><td rowspan="1">28371</td></tr><tr class="passedodd"><td rowspan="12">Test.TestSearch</td><td><a href="#m11">BrandName</a></td><td rowspan="1">1786438388443</td><td rowspan="1">9465</td></tr><tr class="passedodd"><td><a href="#m12">DiscontinuedProductName</a></td><td rowspan="1">1786438405141</td><td rowspan="1">8710</td></tr><tr class="passedodd"><td><a href="#m13">DiscontinuedProductSku</a></td><td rowspan="1">1786438420828</td><td rowspan="1">8571</td></tr><tr class="passedodd"><td><a href="#m14">ExactProductName</a></td><td rowspan="1">1786438435757</td><td rowspan="1">9165</td></tr><tr class="passedodd"><td><a href="#m15">InvalidProductName</a></td><td rowspan="1">1786438453077</td><td rowspan="1">9973</td></tr><tr class="passedodd"><td><a href="#m16">LowerCaseProductName</a></td><td rowspan="1">1786438471426</td><td rowspan="1">8440</td></tr><tr class="passedodd"><td><a href="#m17">MixcaseProductName</a></td><td rowspan="1">1786438486644</td><td rowspan="1">8899</td></tr><tr class="passedodd"><td><a href="#m18">PartialProductName</a></td><td rowspan="1">1786438502370</td><td rowspan="1">8847</td></tr><tr class="passedodd"><td><a href="#m19">SKUNumber</a></td><td rowspan="1">1786438517893</td><td rowspan="1">8643</td></tr><tr class="passedodd"><td><a href="#m20">SpecialCharacterProductName</a></td><td rowspan="1">1786438532872</td><td rowspan="1">8900</td></tr><tr class="passedodd"><td><a href="#m21">UpperCaseProductName</a></td><td rowspan="1">1786438548486</td><td rowspan="1">8569</td></tr><tr class="passedodd"><td><a href="#m22">ValidProductName</a></td><td rowspan="1">1786438563519</td><td rowspan="1">9530</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Test.TestResetPassword#InvalidResetEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Exception during Invalid Reset Password Test: Keys to send should be a not null CharSequence
-	at org.testng.Assert.fail(Assert.java:99)
-	at Test.TestResetPassword.InvalidResetEmail(TestResetPassword.java:116)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
-	at Test.TestResetPassword.InvalidResetEmail(TestResetPassword.java:103)
-	... 26 more
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Test.TestResetPassword#ValidResetEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Exception during Login Test: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;cm-notification-content notification-content cm-auto-hide alert-success&apos;]&quot;}
+<h2>Test</h2><h3 id="m0">Test.TestLogin#InvalidDetail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Exception during Login Test with Incorrect Details: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
   (Session info: chrome=151.0.7922.76)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25516237742f3cd8312195613f72aeb6, findElement {using=xpath, value=//div[@class=&apos;cm-notification-content notification-content cm-auto-hide alert-success&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60561}, goog:processID: 11200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60561/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 25516237742f3cd8312195613f72aeb6
-	at org.testng.Assert.fail(Assert.java:99)
-	at Test.TestResetPassword.ValidResetEmail(TestResetPassword.java:80)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+Command: [c033cc784b26a5a6b90a9c175d29910b, clickElement {id=f.3D04E85D41A132C93B3BCAD3CD8BEB34.d.2D715732A9C6E8FDA6EAECF33EFDF121.e.1467}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58788}, goog:processID: 26904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58788/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c033cc784b26a5a6b90a9c175d29910b)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: c033cc784b26a5a6b90a9c175d29910b
+	at Test.TestLogin.InvalidDetail(TestLogin.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;cm-notification-content notification-content cm-auto-hide alert-success&apos;]&quot;}
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
   (Session info: chrome=151.0.7922.76)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25516237742f3cd8312195613f72aeb6, findElement {using=xpath, value=//div[@class=&apos;cm-notification-content notification-content cm-auto-hide alert-success&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60561}, goog:processID: 11200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60561/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 25516237742f3cd8312195613f72aeb6
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Command: [c033cc784b26a5a6b90a9c175d29910b, clickElement {id=f.3D04E85D41A132C93B3BCAD3CD8BEB34.d.2D715732A9C6E8FDA6EAECF33EFDF121.e.1467}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58788}, goog:processID: 26904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58788/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c033cc784b26a5a6b90a9c175d29910b)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: c033cc784b26a5a6b90a9c175d29910b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -107,15 +40,67 @@ Session ID: 25516237742f3cd8312195613f72aeb6
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
-	at Test.TestResetPassword.ValidResetEmail(TestResetPassword.java:73)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at Test.TestLogin.InvalidDetail(TestLogin.java:111)
 	... 26 more
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test.TestLogin#RememberMe</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Exception during Login Test with Remember Me functionality: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ec6e9c15aa15ba6dcec37c4f29edf34, clickElement {id=f.EF4A30CDA194FFD24687C691C473A6C0.d.C57F1441C3277B771E97B8656F179225.e.1456}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58209}, goog:processID: 15648, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58209/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ec6e9c15aa15ba6dcec37c4f29edf34)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: 3ec6e9c15aa15ba6dcec37c4f29edf34
+	at Test.TestLogin.RememberMe(TestLogin.java:374)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ec6e9c15aa15ba6dcec37c4f29edf34, clickElement {id=f.EF4A30CDA194FFD24687C691C473A6C0.d.C57F1441C3277B771E97B8656F179225.e.1456}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58209}, goog:processID: 15648, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58209/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ec6e9c15aa15ba6dcec37c4f29edf34)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: 3ec6e9c15aa15ba6dcec37c4f29edf34
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at Test.TestLogin.RememberMe(TestLogin.java:364)
+	... 26 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test.TestLogin#CorrectDetail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Test.TestLogin#EmptyDetail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Test.TestLogin#EmptyEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Test.TestLogin#EmptyPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Test.TestLogin#ForgotPasswordLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Test.TestLogin#InvalidEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Test.TestLogin#RegisterLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Test.TestLogin#ValidEmailInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Test.TestLogin#ValidEmailWithSpaces</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Test.TestSearch#BrandName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Test.TestSearch#DiscontinuedProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Test.TestSearch#DiscontinuedProductSku</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">Test.TestSearch#ExactProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">Test.TestSearch#InvalidProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">Test.TestSearch#LowerCaseProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">Test.TestSearch#MixcaseProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">Test.TestSearch#PartialProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">Test.TestSearch#SKUNumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">Test.TestSearch#SpecialCharacterProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">Test.TestSearch#UpperCaseProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">Test.TestSearch#ValidProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

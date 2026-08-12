@@ -9,9 +9,9 @@
       <class name="Test.TestLogin">
         <methods>
           <include name="closer"/>
-          <include name="LoginTestEmptyDetail"/>
+          <include name="RememberMe"/>
           <include name="openURL"/>
-          <include name="LoginTestWrongDetail"/>
+          <include name="InvalidDetail"/>
         </methods>
       </class> <!-- Test.TestLogin -->
     </classes>

@@ -48,7 +48,7 @@ public class Base {
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+	//	driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
 		
 		return driver;
 	}
