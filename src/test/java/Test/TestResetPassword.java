@@ -20,7 +20,7 @@ public class TestResetPassword extends Base {
 	
 	@BeforeMethod
 	public void openURL() throws Exception {
-		log = LogManager.getLogger(TestContactUsForm.class.getName());
+		log = LogManager.getLogger(TestResetPassword.class.getName());
 		log.info("========== Starting Test Setup ==========");
 		
 		driver = intializeDriver();
@@ -61,10 +61,13 @@ public class TestResetPassword extends Base {
 			LoginPage loginPage = new LoginPage(driver);
 			loginPage.ForgotPasswordLink().click();
 			
+			log.info("Creating ResetPasswordPage object");
 			ResetPasswordPage resetPasswordPage = new ResetPasswordPage(driver);
 			
-			log.info("Entering User Email: " + prop.getProperty("invalidemail"));
-			resetPasswordPage.EmailField().sendKeys(prop.getProperty("invalidemail"));
+			log.info("Entering User Email: " + prop.getProperty("useremail"));
+			resetPasswordPage.EmailField().sendKeys(prop.getProperty("useremail"));
+			
+			Thread.sleep(20000); // Wait for 20 seconds to allow the page to process the input before clicking the button
 			
 			log.info("Clicking on Reset Button");	
 			resetPasswordPage.ResetPasswordButton().click();
@@ -75,9 +78,9 @@ public class TestResetPassword extends Base {
 			
 			
 		} catch (Exception e) {
-			log.error("Error occurred during Login Test: " + e.getMessage());
+			log.error("Error occurred during Reset Password Test: " + e.getMessage());
 			// Make sure exception causes test failure
-			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+			Assert.fail("Exception during Reset Password Test: " + e.getMessage(), e);
 		}
 	}
 	
@@ -99,8 +102,10 @@ public class TestResetPassword extends Base {
 			
 			ResetPasswordPage resetPasswordPage = new ResetPasswordPage(driver);
 			
-			log.info("Entering Invalid User Email: " + prop.getProperty("invaliduseremail"));
-			resetPasswordPage.EmailField().sendKeys(prop.getProperty("invaliduseremail"));
+			log.info("Entering Invalid User Email: " + prop.getProperty("invalidemail"));
+			resetPasswordPage.EmailField().sendKeys(prop.getProperty("invalidemail"));
+			
+			Thread.sleep(20000); // Wait for 20 seconds to allow the page to process the input before clicking the button
 			
 			log.info("Clicking on Reset Button");	
 			resetPasswordPage.ResetPasswordButton().click();

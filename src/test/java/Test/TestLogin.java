@@ -21,7 +21,7 @@ public class TestLogin extends Base {
 	
 	@BeforeMethod
 	public void openURL() throws IOException {
-		log = LogManager.getLogger(TestContactUsForm.class.getName());
+		log = LogManager.getLogger(TestLogin.class.getName());
 		log.info("========== Starting Test Setup ==========");
 		
 		driver = intializeDriver();
@@ -45,7 +45,7 @@ public class TestLogin extends Base {
 }
 	
 	
-	//@Test
+	@Test
 	public void CorrectDetail() {
 		log.info("========== Starting Login Test ==========");
 		
@@ -85,7 +85,7 @@ public class TestLogin extends Base {
 		}
 	}
 	
-	//@Test
+	@Test
 	public void InvalidDetail() {
 		log.info("========== Starting Login Test with Incorrect Details ==========");
 		
@@ -105,7 +105,7 @@ public class TestLogin extends Base {
 			log.info("Entering Password: " + prop.getProperty("w_password"));
 			loginPage.Password().sendKeys(prop.getProperty("w_password"));
 			
-			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
+			Thread.sleep(20000); // Wait for 20 seconds to allow the page to process the input before clicking the button
 			
 			log.info("Clicking on Sign In Button");			
 			loginPage.SignInButton().click();
@@ -123,7 +123,7 @@ public class TestLogin extends Base {
 		}
 	}
 	
-	//@Test
+	@Test
 	public void EmptyDetail() {
 		log.info("========== Starting Login Test with Empty Details ==========");
 		
@@ -155,7 +155,7 @@ public class TestLogin extends Base {
 		}
 	}
 	
-	//@Test
+	@Test
 	public void ValidEmailInvalidPassword() {
 		log.info("========== Starting Login Test with Valid Email and Invalid Password ==========");
 		
@@ -193,7 +193,7 @@ public class TestLogin extends Base {
 		} 		
 	}
 	
-	//@Test	
+	@Test	
 	public void InvalidEmail() {
 		log.info("========== Starting Login Test with Invalid Email ==========");
 		
@@ -230,7 +230,7 @@ public class TestLogin extends Base {
 		}
 	}
 
-	//@Test	
+	@Test	
 	public void EmptyEmail() {
 		log.info("========== Starting Login Test with Empty Email ==========");
 		
@@ -264,7 +264,7 @@ public class TestLogin extends Base {
 		}
 	}
 	
-	//@Test	
+	@Test	
 	public void EmptyPassword() {
 		log.info("========== Starting Login Test with Empty Password ==========");
 		
@@ -298,7 +298,7 @@ public class TestLogin extends Base {
 		}
 	}
 
-	//@Test
+	@Test
 	public void ValidEmailWithSpaces() {
 		log.info("========== Starting Login Test with Valid Email and Spaces ==========");
 		
@@ -335,7 +335,7 @@ public class TestLogin extends Base {
 		}
 	}
 	
-	
+	@Test
 	public void RememberMe() {
 		log.info("========== Starting Login Test with Remember Me functionality ==========");
 		

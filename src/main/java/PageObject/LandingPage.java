@@ -20,12 +20,27 @@ public class LandingPage {
 	@FindBy(xpath="//a[@href='https://www.poscentral.biz/index.php?dispatch=auth.login_form']")
 	private WebElement loginlink;
 	
+	@FindBy(id="search_input25037")
+	private WebElement searchfield;
+	
+	@FindBy(xpath="//div[contains(@class,'text-right')]//button[contains(@title,'Search')]")
+	private WebElement searchbutton;
+	
+	
 	public WebElement ContactUsLink() {
 		return contactuslink;
 	}
 	
 	public WebElement LoginLink() {
 		return loginlink;
+	}
+	
+	public WebElement SearchField() {
+		return searchfield;
+	}
+	
+	public WebElement SearchButton() {
+		return searchbutton;
 	}
 
 }

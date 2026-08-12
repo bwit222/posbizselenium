@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 10 14:53:47 IST 2026</td>
+<td>Started on:</td><td>Tue Aug 11 14:17:55 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>283 seconds (283259 ms)</td>
+<tr><td>Total time:</td><td>498 seconds (498104 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,221 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.TestLogin.InvalidDetail()'><b>InvalidDetail</b><br>Test class: Test.TestLogin</td>
+<td><div><pre>java.lang.AssertionError: Exception during Login Test with Incorrect Details: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c033cc784b26a5a6b90a9c175d29910b, clickElement {id=f.3D04E85D41A132C93B3BCAD3CD8BEB34.d.2D715732A9C6E8FDA6EAECF33EFDF121.e.1467}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58788}, goog:processID: 26904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58788/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c033cc784b26a5a6b90a9c175d29910b)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: c033cc784b26a5a6b90a9c175d29910b
+	at Test.TestLogin.InvalidDetail(TestLogin.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c033cc784b26a5a6b90a9c175d29910b, clickElement {id=f.3D04E85D41A132C93B3BCAD3CD8BEB34.d.2D715732A9C6E8FDA6EAECF33EFDF121.e.1467}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58788}, goog:processID: 26904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58788/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c033cc784b26a5a6b90a9c175d29910b)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: c033cc784b26a5a6b90a9c175d29910b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at Test.TestLogin.InvalidDetail(TestLogin.java:111)
+	... 26 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1989924937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1989924937'><pre>java.lang.AssertionError: Exception during Login Test with Incorrect Details: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c033cc784b26a5a6b90a9c175d29910b, clickElement {id=f.3D04E85D41A132C93B3BCAD3CD8BEB34.d.2D715732A9C6E8FDA6EAECF33EFDF121.e.1467}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58788}, goog:processID: 26904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58788/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c033cc784b26a5a6b90a9c175d29910b)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: c033cc784b26a5a6b90a9c175d29910b
+	at org.testng.Assert.fail(Assert.java:99)
+	at Test.TestLogin.InvalidDetail(TestLogin.java:122)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c033cc784b26a5a6b90a9c175d29910b, clickElement {id=f.3D04E85D41A132C93B3BCAD3CD8BEB34.d.2D715732A9C6E8FDA6EAECF33EFDF121.e.1467}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58788}, goog:processID: 26904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58788/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c033cc784b26a5a6b90a9c175d29910b)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: c033cc784b26a5a6b90a9c175d29910b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at Test.TestLogin.InvalidDetail(TestLogin.java:111)
+	... 26 more
+</pre></div></td>
+<td>25</td>
+<td>Test.TestLogin@81d9a72</td></tr>
+<tr>
+<td title='Test.TestLogin.RememberMe()'><b>RememberMe</b><br>Test class: Test.TestLogin</td>
+<td><div><pre>java.lang.AssertionError: Exception during Login Test with Remember Me functionality: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ec6e9c15aa15ba6dcec37c4f29edf34, clickElement {id=f.EF4A30CDA194FFD24687C691C473A6C0.d.C57F1441C3277B771E97B8656F179225.e.1456}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58209}, goog:processID: 15648, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58209/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ec6e9c15aa15ba6dcec37c4f29edf34)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: 3ec6e9c15aa15ba6dcec37c4f29edf34
+	at Test.TestLogin.RememberMe(TestLogin.java:374)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ec6e9c15aa15ba6dcec37c4f29edf34, clickElement {id=f.EF4A30CDA194FFD24687C691C473A6C0.d.C57F1441C3277B771E97B8656F179225.e.1456}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58209}, goog:processID: 15648, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58209/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ec6e9c15aa15ba6dcec37c4f29edf34)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: 3ec6e9c15aa15ba6dcec37c4f29edf34
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at Test.TestLogin.RememberMe(TestLogin.java:364)
+	... 26 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1600206621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1600206621'><pre>java.lang.AssertionError: Exception during Login Test with Remember Me functionality: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ec6e9c15aa15ba6dcec37c4f29edf34, clickElement {id=f.EF4A30CDA194FFD24687C691C473A6C0.d.C57F1441C3277B771E97B8656F179225.e.1456}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58209}, goog:processID: 15648, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58209/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ec6e9c15aa15ba6dcec37c4f29edf34)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: 3ec6e9c15aa15ba6dcec37c4f29edf34
+	at org.testng.Assert.fail(Assert.java:99)
+	at Test.TestLogin.RememberMe(TestLogin.java:374)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;ty-btn__login ty-btn__secondary ty-btn&quot; type=&quot;submit&quot; name=&quot;dispatch[auth.login]&quot;&gt;...&lt;/button&gt; is not clickable at point (884, 670). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=151.0.7922.76)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ec6e9c15aa15ba6dcec37c4f29edf34, clickElement {id=f.EF4A30CDA194FFD24687C691C473A6C0.d.C57F1441C3277B771E97B8656F179225.e.1456}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.76, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58209}, goog:processID: 15648, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58209/devtoo..., se:cdpVersion: 151.0.7922.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ec6e9c15aa15ba6dcec37c4f29edf34)] -&gt; css selector: form[name=&apos;main_login_form&apos;] div[class=&apos;ty-float-right&apos;] button[name=&apos;dispatch[auth.login]&apos;]]
+Session ID: 3ec6e9c15aa15ba6dcec37c4f29edf34
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at Test.TestLogin.RememberMe(TestLogin.java:364)
+	... 26 more
+</pre></div></td>
+<td>25</td>
+<td>Test.TestLogin@81d9a72</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,45 +291,110 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test.TestLogin.CorrectDetail()'><b>CorrectDetail</b><br>Test class: Test.TestLogin</td>
+<td title='Test.TestSearch.BrandName()'><b>BrandName</b><br>Test class: Test.TestSearch</td>
 <td></td>
-<td>31</td>
-<td>Test.TestLogin@53f3bdbd</td></tr>
-<tr>
-<td title='Test.TestLogin.EmptyEmail()'><b>EmptyEmail</b><br>Test class: Test.TestLogin</td>
-<td></td>
-<td>26</td>
-<td>Test.TestLogin@53f3bdbd</td></tr>
-<tr>
-<td title='Test.TestLogin.EmptyPassword()'><b>EmptyPassword</b><br>Test class: Test.TestLogin</td>
-<td></td>
-<td>26</td>
-<td>Test.TestLogin@53f3bdbd</td></tr>
-<tr>
-<td title='Test.TestLogin.ValidEmailInvalidPassword()'><b>ValidEmailInvalidPassword</b><br>Test class: Test.TestLogin</td>
-<td></td>
-<td>29</td>
-<td>Test.TestLogin@53f3bdbd</td></tr>
-<tr>
-<td title='Test.TestLogin.InvalidEmail()'><b>InvalidEmail</b><br>Test class: Test.TestLogin</td>
-<td></td>
-<td>29</td>
-<td>Test.TestLogin@53f3bdbd</td></tr>
+<td>9</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
 <tr>
 <td title='Test.TestLogin.EmptyDetail()'><b>EmptyDetail</b><br>Test class: Test.TestLogin</td>
 <td></td>
+<td>4</td>
+<td>Test.TestLogin@81d9a72</td></tr>
+<tr>
+<td title='Test.TestSearch.InvalidProductName()'><b>InvalidProductName</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>9</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestLogin.InvalidEmail()'><b>InvalidEmail</b><br>Test class: Test.TestLogin</td>
+<td></td>
+<td>26</td>
+<td>Test.TestLogin@81d9a72</td></tr>
+<tr>
+<td title='Test.TestSearch.ExactProductName()'><b>ExactProductName</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>9</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestSearch.SpecialCharacterProductName()'><b>SpecialCharacterProductName</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>8</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestSearch.DiscontinuedProductName()'><b>DiscontinuedProductName</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>8</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestSearch.UpperCaseProductName()'><b>UpperCaseProductName</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>8</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestLogin.ValidEmailInvalidPassword()'><b>ValidEmailInvalidPassword</b><br>Test class: Test.TestLogin</td>
+<td></td>
+<td>27</td>
+<td>Test.TestLogin@81d9a72</td></tr>
+<tr>
+<td title='Test.TestLogin.CorrectDetail()'><b>CorrectDetail</b><br>Test class: Test.TestLogin</td>
+<td></td>
+<td>29</td>
+<td>Test.TestLogin@81d9a72</td></tr>
+<tr>
+<td title='Test.TestSearch.SKUNumber()'><b>SKUNumber</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>8</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestLogin.ForgotPasswordLink()'><b>ForgotPasswordLink</b><br>Test class: Test.TestLogin</td>
+<td></td>
 <td>6</td>
-<td>Test.TestLogin@53f3bdbd</td></tr>
+<td>Test.TestLogin@81d9a72</td></tr>
+<tr>
+<td title='Test.TestLogin.RegisterLink()'><b>RegisterLink</b><br>Test class: Test.TestLogin</td>
+<td></td>
+<td>6</td>
+<td>Test.TestLogin@81d9a72</td></tr>
+<tr>
+<td title='Test.TestLogin.EmptyEmail()'><b>EmptyEmail</b><br>Test class: Test.TestLogin</td>
+<td></td>
+<td>24</td>
+<td>Test.TestLogin@81d9a72</td></tr>
 <tr>
 <td title='Test.TestLogin.ValidEmailWithSpaces()'><b>ValidEmailWithSpaces</b><br>Test class: Test.TestLogin</td>
 <td></td>
-<td>30</td>
-<td>Test.TestLogin@53f3bdbd</td></tr>
+<td>28</td>
+<td>Test.TestLogin@81d9a72</td></tr>
 <tr>
-<td title='Test.TestLogin.InvalidDetail()'><b>InvalidDetail</b><br>Test class: Test.TestLogin</td>
+<td title='Test.TestSearch.MixcaseProductName()'><b>MixcaseProductName</b><br>Test class: Test.TestSearch</td>
 <td></td>
-<td>29</td>
-<td>Test.TestLogin@53f3bdbd</td></tr>
+<td>8</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestSearch.PartialProductName()'><b>PartialProductName</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>8</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestSearch.ValidProductName()'><b>ValidProductName</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>9</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestSearch.DiscontinuedProductSku()'><b>DiscontinuedProductSku</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>8</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestSearch.LowerCaseProductName()'><b>LowerCaseProductName</b><br>Test class: Test.TestSearch</td>
+<td></td>
+<td>8</td>
+<td>Test.TestSearch@26adfd2d</td></tr>
+<tr>
+<td title='Test.TestLogin.EmptyPassword()'><b>EmptyPassword</b><br>Test class: Test.TestLogin</td>
+<td></td>
+<td>24</td>
+<td>Test.TestLogin@81d9a72</td></tr>
 </table><p>
 </body>
 </html>
