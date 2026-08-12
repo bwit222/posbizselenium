@@ -518,8 +518,7 @@ public class TestSearch extends Base {
 			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
 		}
 	}
-	
-	
+			
 
 }
 
