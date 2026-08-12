@@ -89,6 +89,15 @@ public class TestSearch extends Base {
 	public void ExactProductName() {
 	    log.info("========== Starting Exact Product Name Search Test ==========");
 	    
+	    
+	    System.out.println("Test test Test testTest testTest testTest test "); 
+	    System.out.println("Test test Test testTest testTest testTest test "); 
+	    System.out.println("Test test Test testTest testTest testTest test "); 
+	    System.out.println("Test test Test testTest testTest testTest test "); 
+	    System.out.println("Test test Test testTest testTest testTest test "); 
+	    
+	    
+	    
 	    try {
 	        log.info("Creating LandingPage object");
 	        LandingPage landingPage = new LandingPage(driver);
