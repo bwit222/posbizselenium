@@ -48,9 +48,7 @@ public class TestLogin extends Base {
 	@Test
 	public void CorrectDetail() {
 		log.info("========== Starting Login Test ==========");
-		
-		
-		
+				
 		try {
 			log.info("Creating LandingPage object");
 			LandingPage landingPage = new LandingPage(driver);
