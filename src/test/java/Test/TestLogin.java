@@ -63,7 +63,7 @@ public class TestLogin extends Base {
 			loginPage.UserEmail().sendKeys(prop.getProperty("useremail"));
 			
 			log.info("Entering Password: " + prop.getProperty("c_password"));
-			loginPage.Password().sendKeys(prop.getProperty("c_password"));
+			loginPage.UserPassword().sendKeys(prop.getProperty("c_password"));
 			
 			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
 			
@@ -101,7 +101,7 @@ public class TestLogin extends Base {
 			loginPage.UserEmail().sendKeys(prop.getProperty("invalidemail"));
 			
 			log.info("Entering Password: " + prop.getProperty("w_password"));
-			loginPage.Password().sendKeys(prop.getProperty("w_password"));
+			loginPage.UserPassword().sendKeys(prop.getProperty("w_password"));
 			
 			Thread.sleep(20000); // Wait for 20 seconds to allow the page to process the input before clicking the button
 			
@@ -171,7 +171,7 @@ public class TestLogin extends Base {
 			loginPage.UserEmail().sendKeys(prop.getProperty("useremail"));
 			
 			log.info("Entering Password: " + prop.getProperty("w_password"));
-			loginPage.Password().sendKeys(prop.getProperty("w_password"));
+			loginPage.UserPassword().sendKeys(prop.getProperty("w_password"));
 			
 			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
 			
@@ -209,7 +209,7 @@ public class TestLogin extends Base {
 			loginPage.UserEmail().sendKeys(prop.getProperty("invalidemail"));
 			
 			log.info("Entering Password: " + prop.getProperty("w_password"));
-			loginPage.Password().sendKeys(prop.getProperty("w_password"));
+			loginPage.UserPassword().sendKeys(prop.getProperty("w_password"));
 			
 			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
 			
@@ -243,7 +243,7 @@ public class TestLogin extends Base {
 			LoginPage loginPage = new LoginPage(driver);
 			
 			log.info("Entering Password: " + prop.getProperty("w_password"));
-			loginPage.Password().sendKeys(prop.getProperty("w_password"));
+			loginPage.UserPassword().sendKeys(prop.getProperty("w_password"));
 			
 			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
 			
@@ -314,7 +314,7 @@ public class TestLogin extends Base {
 			loginPage.UserEmail().sendKeys("   " + prop.getProperty("emailspace") + "   ");
 			
 			log.info("Entering Password: " + prop.getProperty("c_password"));
-			loginPage.Password().sendKeys(prop.getProperty("c_password"));
+			loginPage.UserPassword().sendKeys(prop.getProperty("c_password"));
 			
 			Thread.sleep(20000); // Wait for 10 seconds to allow the page to process the input before clicking the button
 			
@@ -351,7 +351,7 @@ public class TestLogin extends Base {
 			loginPage.UserEmail().sendKeys(prop.getProperty("useremail"));
 			
 			log.info("Entering Password: " + prop.getProperty("c_password"));
-			loginPage.Password().sendKeys(prop.getProperty("c_password"));
+			loginPage.UserPassword().sendKeys(prop.getProperty("c_password"));
 			
 			log.info("Clicking on Remember Me Checkbox");
 			loginPage.RememberMeCheckbox().click();

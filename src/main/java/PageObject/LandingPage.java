@@ -26,11 +26,13 @@ public class LandingPage {
 	@FindBy(xpath="//div[contains(@class,'text-right')]//button[contains(@title,'Search')]")
 	private WebElement searchbutton;
 	
+	@FindBy(css="div[id='sw_dropdown_25026'] a")
+	private WebElement cartlink;
 	
 	
-	
-	
-	
+	public WebElement CartLink() {
+		return cartlink;
+	}	
 	
 	public WebElement ContactUsLink() {
 		return contactuslink;

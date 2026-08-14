@@ -1,25 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-12T17:34:05 IST" name="Default suite" finished-at="2026-08-12T17:34:50 IST" duration-ms="45185">
+  <suite started-at="2026-08-14T15:42:42 IST" name="Suite" finished-at="2026-08-14T15:47:11 IST" duration-ms="268764">
     <groups>
     </groups>
-    <test started-at="2026-08-12T17:34:05 IST" name="Default test" finished-at="2026-08-12T17:34:50 IST" duration-ms="45185">
-      <class name="Test.TestCartPage">
-        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.TestCartPage@3c9754d8]" started-at="2026-08-12T17:34:05 IST" name="openURL" finished-at="2026-08-12T17:34:18 IST" duration-ms="13399" status="PASS">
+    <test started-at="2026-08-14T15:42:42 IST" name="Test" finished-at="2026-08-14T15:47:11 IST" duration-ms="268764">
+      <class name="Test.EndToEndPurchaseTest">
+        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:42:42 IST" name="openURL" finished-at="2026-08-14T15:42:50 IST" duration-ms="8022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method signature="CartPage()[pri:0, instance:Test.TestCartPage@3c9754d8]" started-at="2026-08-12T17:34:18 IST" name="CartPage" finished-at="2026-08-12T17:34:49 IST" duration-ms="31501" status="PASS">
+        <test-method signature="testStep1_ValidateHomepageLoading()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:42:50 IST" name="testStep1_ValidateHomepageLoading" finished-at="2026-08-14T15:42:53 IST" duration-ms="2697" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CartPage -->
-        <test-method is-config="true" signature="closer()[pri:0, instance:Test.TestCartPage@3c9754d8]" started-at="2026-08-12T17:34:50 IST" name="closer" finished-at="2026-08-12T17:34:50 IST" duration-ms="224" status="PASS">
+        </test-method> <!-- testStep1_ValidateHomepageLoading -->
+        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:42:53 IST" name="closer" finished-at="2026-08-14T15:42:54 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closer -->
-      </class> <!-- Test.TestCartPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:42:54 IST" name="openURL" finished-at="2026-08-14T15:43:00 IST" duration-ms="6119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="testStep2_UserLogin()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:43:00 IST" name="testStep2_UserLogin" finished-at="2026-08-14T15:43:28 IST" duration-ms="28558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStep2_UserLogin -->
+        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:43:29 IST" name="closer" finished-at="2026-08-14T15:43:29 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closer -->
+        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:43:29 IST" name="openURL" finished-at="2026-08-14T15:43:35 IST" duration-ms="6358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="testStep3_SearchProduct()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:43:35 IST" name="testStep3_SearchProduct" finished-at="2026-08-14T15:44:07 IST" duration-ms="31725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStep3_SearchProduct -->
+        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:07 IST" name="closer" finished-at="2026-08-14T15:44:08 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closer -->
+        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:08 IST" name="openURL" finished-at="2026-08-14T15:44:14 IST" duration-ms="6049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="testStep4_AddProductToCart()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:14 IST" name="testStep4_AddProductToCart" finished-at="2026-08-14T15:44:49 IST" duration-ms="35674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStep4_AddProductToCart -->
+        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:49 IST" name="closer" finished-at="2026-08-14T15:44:50 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closer -->
+        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:50 IST" name="openURL" finished-at="2026-08-14T15:44:56 IST" duration-ms="5898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="testStep5_ValidateCart()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:56 IST" name="testStep5_ValidateCart" finished-at="2026-08-14T15:45:32 IST" duration-ms="36880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStep5_ValidateCart -->
+        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:45:33 IST" name="closer" finished-at="2026-08-14T15:45:33 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closer -->
+        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:45:33 IST" name="openURL" finished-at="2026-08-14T15:45:39 IST" duration-ms="6235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="testStep6_QuantityAndPromoCode()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:45:39 IST" name="testStep6_QuantityAndPromoCode" finished-at="2026-08-14T15:46:24 IST" duration-ms="45021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStep6_QuantityAndPromoCode -->
+        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:46:24 IST" name="closer" finished-at="2026-08-14T15:46:24 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closer -->
+        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:46:24 IST" name="openURL" finished-at="2026-08-14T15:46:31 IST" duration-ms="6432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="testStep7_CheckoutPageValidation()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:46:31 IST" name="testStep7_CheckoutPageValidation" finished-at="2026-08-14T15:47:11 IST" duration-ms="39799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStep7_CheckoutPageValidation -->
+        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:47:11 IST" name="closer" finished-at="2026-08-14T15:47:11 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closer -->
+      </class> <!-- Test.EndToEndPurchaseTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
