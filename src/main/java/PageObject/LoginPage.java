@@ -56,7 +56,7 @@ public class LoginPage {
 		return useremail;
 	}
 	
-	public WebElement Password() {
+	public WebElement UserPassword() {
 		return password;
 	}
 	

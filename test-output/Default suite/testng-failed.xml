@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.TestSearch">
+      <class name="Test.EndToEndPurchaseTest">
         <methods>
-          <include name="openURL"/>
-          <include name="ValidProductName"/>
           <include name="closer"/>
+          <include name="testStep6_QuantityAndPromoCode"/>
+          <include name="openURL"/>
         </methods>
-      </class> <!-- Test.TestSearch -->
+      </class> <!-- Test.EndToEndPurchaseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,7 +9,7 @@ static ExtentReports extentReport;
 	
 	public static ExtentReports getExtentReport() {
 		
-		String extentReportPath = System.getProperty("user.dir")+"\\reports\\PosBizReport.html";
+		String extentReportPath = System.getProperty("user.dir")+"\\reports\\EndToEndReport3.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(extentReportPath);
 		reporter.config().setReportName("POS Automation Test Results Report");
 		reporter.config().setDocumentTitle("Test Results");

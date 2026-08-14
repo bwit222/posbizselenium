@@ -14,10 +14,10 @@ public class CartPage {
 		PageFactory.initElements(driver, this);	
 	}	
 	
-	@FindBy(linkText="Proceed to checkoutProceed to checkout")	
+	@FindBy(css="div[class='buttons-container ty-cart-content__top-buttons clearfix'] a[class='ty-btn ty-btn__primary ']")	
 	private WebElement proceedtocheckoutbutton;	
 	
-	@FindBy(linkText="Continue shopping")	
+	@FindBy(css="div[class='buttons-container ty-cart-content__bottom-buttons clearfix'] a[class='ty-btn ty-btn__secondary ']")	
 	private WebElement continueshoppingbutton;	
 	
 	@FindBy(id="coupon_field")
@@ -38,7 +38,22 @@ public class CartPage {
 	@FindBy(xpath="//h1[normalize-space()='Cart contents']")
 	private WebElement cartpagetitle;
 	
+	@FindBy(xpath="//a[normalize-space()='+']")
+	private WebElement quantityaddicon;
 	
+	@FindBy(xpath="//a[contains(text(),'−')]")
+	private WebElement quantityminusicon;
+	
+	
+	
+	
+	public WebElement QuantityAddIcon() {
+		return quantityaddicon;
+	}
+	
+	public WebElement QuantityMinusIcon() {
+		return quantityminusicon;
+	}
 	
 	public WebElement ProceedToCheckoutButton() {
 		return proceedtocheckoutbutton;

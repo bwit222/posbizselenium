@@ -6,12 +6,25 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Test.TestCartPage">
+        <methods>
+          <include name="closer"/>
+          <include name="openURL"/>
+          <include name="CartPage"/>
+        </methods>
+      </class> <!-- Test.TestCartPage -->
+      <class name="Test.TestResetPassword">
+        <methods>
+          <include name="openURL"/>
+          <include name="InvalidResetEmail"/>
+          <include name="closer"/>
+        </methods>
+      </class> <!-- Test.TestResetPassword -->
       <class name="Test.TestLogin">
         <methods>
           <include name="closer"/>
           <include name="RememberMe"/>
           <include name="openURL"/>
-          <include name="InvalidDetail"/>
         </methods>
       </class> <!-- Test.TestLogin -->
     </classes>
