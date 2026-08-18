@@ -1,97 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-14T15:42:42 IST" name="Suite" finished-at="2026-08-14T15:47:11 IST" duration-ms="268764">
+  <suite started-at="2026-08-18T17:17:00 IST" name="Default suite" finished-at="2026-08-18T17:18:23 IST" duration-ms="82320">
     <groups>
     </groups>
-    <test started-at="2026-08-14T15:42:42 IST" name="Test" finished-at="2026-08-14T15:47:11 IST" duration-ms="268764">
+    <test started-at="2026-08-18T17:17:00 IST" name="Default test" finished-at="2026-08-18T17:18:23 IST" duration-ms="82320">
       <class name="Test.EndToEndPurchaseTest">
-        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:42:42 IST" name="openURL" finished-at="2026-08-14T15:42:50 IST" duration-ms="8022" status="PASS">
+        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@26794848]" started-at="2026-08-18T17:17:00 IST" name="openURL" finished-at="2026-08-18T17:17:11 IST" duration-ms="10266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method signature="testStep1_ValidateHomepageLoading()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:42:50 IST" name="testStep1_ValidateHomepageLoading" finished-at="2026-08-14T15:42:53 IST" duration-ms="2697" status="PASS">
+        <test-method signature="testStep8_PlaceOrderAndValidateConfirmation()[pri:0, instance:Test.EndToEndPurchaseTest@26794848]" started-at="2026-08-18T17:17:11 IST" name="testStep8_PlaceOrderAndValidateConfirmation" finished-at="2026-08-18T17:18:22 IST" duration-ms="71642" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Exception during Login Test: element not interactable
+  (Session info: chrome=151.0.7922.138)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0dbdc03c1d6abbd39bf65698abc564b, clickElement {id=f.1AFA7F90C39CF73639ED7EC84A0C9905.d.7026723E71F23BED60BADC10B54E972A.e.4112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59733}, goog:processID: 29384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59733/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d0dbdc03c1d6abbd39bf65698abc564b)] -> xpath: //input[@type='hidden' and @name='accept_terms']/following-sibling::input[@type='checkbox']]
+Session ID: d0dbdc03c1d6abbd39bf65698abc564b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Exception during Login Test: element not interactable
+  (Session info: chrome=151.0.7922.138)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0dbdc03c1d6abbd39bf65698abc564b, clickElement {id=f.1AFA7F90C39CF73639ED7EC84A0C9905.d.7026723E71F23BED60BADC10B54E972A.e.4112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59733}, goog:processID: 29384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59733/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d0dbdc03c1d6abbd39bf65698abc564b)] -> xpath: //input[@type='hidden' and @name='accept_terms']/following-sibling::input[@type='checkbox']]
+Session ID: d0dbdc03c1d6abbd39bf65698abc564b
+at org.testng.Assert.fail(Assert.java:99)
+at Test.EndToEndPurchaseTest.testStep8_PlaceOrderAndValidateConfirmation(EndToEndPurchaseTest.java:349)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=151.0.7922.138)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0dbdc03c1d6abbd39bf65698abc564b, clickElement {id=f.1AFA7F90C39CF73639ED7EC84A0C9905.d.7026723E71F23BED60BADC10B54E972A.e.4112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59733}, goog:processID: 29384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59733/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d0dbdc03c1d6abbd39bf65698abc564b)] -> xpath: //input[@type='hidden' and @name='accept_terms']/following-sibling::input[@type='checkbox']]
+Session ID: d0dbdc03c1d6abbd39bf65698abc564b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at Test.EndToEndPurchaseTest.testStep8_PlaceOrderAndValidateConfirmation(EndToEndPurchaseTest.java:332)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testStep1_ValidateHomepageLoading -->
-        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:42:53 IST" name="closer" finished-at="2026-08-14T15:42:54 IST" duration-ms="321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closer -->
-        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:42:54 IST" name="openURL" finished-at="2026-08-14T15:43:00 IST" duration-ms="6119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method signature="testStep2_UserLogin()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:43:00 IST" name="testStep2_UserLogin" finished-at="2026-08-14T15:43:28 IST" duration-ms="28558" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStep2_UserLogin -->
-        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:43:29 IST" name="closer" finished-at="2026-08-14T15:43:29 IST" duration-ms="233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closer -->
-        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:43:29 IST" name="openURL" finished-at="2026-08-14T15:43:35 IST" duration-ms="6358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method signature="testStep3_SearchProduct()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:43:35 IST" name="testStep3_SearchProduct" finished-at="2026-08-14T15:44:07 IST" duration-ms="31725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStep3_SearchProduct -->
-        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:07 IST" name="closer" finished-at="2026-08-14T15:44:08 IST" duration-ms="259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closer -->
-        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:08 IST" name="openURL" finished-at="2026-08-14T15:44:14 IST" duration-ms="6049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method signature="testStep4_AddProductToCart()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:14 IST" name="testStep4_AddProductToCart" finished-at="2026-08-14T15:44:49 IST" duration-ms="35674" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStep4_AddProductToCart -->
-        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:49 IST" name="closer" finished-at="2026-08-14T15:44:50 IST" duration-ms="230" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closer -->
-        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:50 IST" name="openURL" finished-at="2026-08-14T15:44:56 IST" duration-ms="5898" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method signature="testStep5_ValidateCart()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:44:56 IST" name="testStep5_ValidateCart" finished-at="2026-08-14T15:45:32 IST" duration-ms="36880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStep5_ValidateCart -->
-        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:45:33 IST" name="closer" finished-at="2026-08-14T15:45:33 IST" duration-ms="215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closer -->
-        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:45:33 IST" name="openURL" finished-at="2026-08-14T15:45:39 IST" duration-ms="6235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method signature="testStep6_QuantityAndPromoCode()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:45:39 IST" name="testStep6_QuantityAndPromoCode" finished-at="2026-08-14T15:46:24 IST" duration-ms="45021" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStep6_QuantityAndPromoCode -->
-        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:46:24 IST" name="closer" finished-at="2026-08-14T15:46:24 IST" duration-ms="237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closer -->
-        <test-method is-config="true" signature="openURL()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:46:24 IST" name="openURL" finished-at="2026-08-14T15:46:31 IST" duration-ms="6432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method signature="testStep7_CheckoutPageValidation()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:46:31 IST" name="testStep7_CheckoutPageValidation" finished-at="2026-08-14T15:47:11 IST" duration-ms="39799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStep7_CheckoutPageValidation -->
-        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@222a59e6]" started-at="2026-08-14T15:47:11 IST" name="closer" finished-at="2026-08-14T15:47:11 IST" duration-ms="229" status="PASS">
+        </test-method> <!-- testStep8_PlaceOrderAndValidateConfirmation -->
+        <test-method is-config="true" signature="closer()[pri:0, instance:Test.EndToEndPurchaseTest@26794848]" started-at="2026-08-18T17:18:22 IST" name="closer" finished-at="2026-08-18T17:18:23 IST" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closer -->
       </class> <!-- Test.EndToEndPurchaseTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
