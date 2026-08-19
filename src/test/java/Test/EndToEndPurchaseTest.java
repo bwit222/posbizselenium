@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -70,7 +71,7 @@ public class EndToEndPurchaseTest extends Base {
 	
 //Test Start From Here===============	
 	
-	@Test
+	//@Test
 	public void testStep1_ValidateHomepageLoading() {
 log.info("========== STEP 1: HOMEPAGE VALIDATION TEST STARTED ==========");	
 	try {	     	
@@ -85,7 +86,7 @@ log.info("========== STEP 1: HOMEPAGE VALIDATION TEST STARTED ==========");
 	}
 	
 	
-	@Test
+	//@Test
     public void testStep2_UserLogin() {
 log.info("========== STEP 2: USER LOGIN TEST STARTED ==========");
 	try {
@@ -105,7 +106,7 @@ log.info("========== STEP 2: USER LOGIN TEST STARTED ==========");
 		}
     }
 	
-	@Test
+	//@Test
     public void testStep3_SearchProduct() {
 log.info("========== STEP 3: PRODUCT SEARCH TEST STARTED ==========");
 	try {
@@ -129,7 +130,7 @@ log.info("========== STEP 3: PRODUCT SEARCH TEST STARTED ==========");
 			}
     }
 	
-	@Test
+	//@Test
     public void testStep4_AddProductToCart() {
 log.info("========== STEP 4: ADD PRODUCT TO CART TEST STARTED ==========");
 	try {
@@ -157,7 +158,7 @@ log.info("========== STEP 4: ADD PRODUCT TO CART TEST STARTED ==========");
 		}
 }
    
-    @Test
+	//@Test
     public void testStep5_ValidateCart() {
 log.info("========== STEP 5: CART VALIDATION TEST STARTED ==========");
 try {
@@ -188,7 +189,7 @@ try {
 			}
 }
     
-    @Test
+    //@Test
     public void testStep6_QuantityAndPromoCode() {
 log.info("========== STEP 6: QUANTITY AND PROMO CODE TEST STARTED ==========");
 	try {
@@ -241,7 +242,7 @@ log.info("========== STEP 6: QUANTITY AND PROMO CODE TEST STARTED ==========");
 			}
 }
         
-    @Test
+    //@Test
     public void testStep7_CheckoutPageValidation() {
 log.info("========== STEP 7: CHECKOUT PAGE VALIDATION TEST STARTED ==========");
 try {
@@ -275,10 +276,84 @@ try {
 
 }
     
-    //@Test
+    @Test
 	public void testStep8_PlaceOrderAndValidateConfirmation() {
 log.info("========== STEP 8: PLACE ORDER AND ORDER CONFIRMATION TEST STARTED ==========");
+		
+try {
+	landingpage.LoginLink().click();
+	
+	loginPage.UserEmail().sendKeys(prop.getProperty("useremail"));
+	loginPage.UserPassword().sendKeys(prop.getProperty("c_password"));
+	Thread.sleep(20000);
+	loginPage.SignInButton().click();
+	
+	//Search for a Product===========================
+	landingpage.SearchField().sendKeys(prop.getProperty("skunumber"));
+	landingpage.SearchButton().click();
+	
+	//Add Product to Cart===========================
+	searchpage.AddToCartButton().click();
+	searchpage.ContinueShoppingButton().click();
+	landingpage.CartLink().click();
+	searchpage.ViewCartButton().click();
+	
+	//Checkout Page Verify===========================
+	cartpage.ProceedToCheckoutButton().click();
+	Thread.sleep(5000);
+	
+	//Payment Gateway================================	
+	WebElement cardframe = checkoutpage.CardNumberFrame();
+	
+	driver.switchTo().frame(cardframe);
+	checkoutpage.CardNumberInput().sendKeys(prop.getProperty("cardnumber"));
+	driver.switchTo().defaultContent();
+	log.info("========== Card Number Entered ==========");
+	
+	WebElement cvvframe = checkoutpage.CvvFrame();
+	driver.switchTo().frame(cvvframe);
+	checkoutpage.CvvInput().sendKeys(prop.getProperty("cvv"));
+	driver.switchTo().defaultContent();
+	log.info("========== CVV Entered ==========");
+	
+	WebElement expiryframe = checkoutpage.ExpiryDateFrame();
+	driver.switchTo().frame(expiryframe);
+	checkoutpage.ExpiryDateInput().sendKeys(prop.getProperty("expiry"));
+	log.info("========== Expiry Number Entered ==========");
+	driver.switchTo().defaultContent();
+	
+	checkoutpage.CardHolderName().sendKeys(prop.getProperty("cardholdername"));
+	log.info("========== CardHolder Name Entered ==========");
+	Thread.sleep(5000);
+	
+	//checkoutpage.NewsLetterSub().click();
+	//log.info("========== Newsletter Checked ==========");
+	
+	//Select Term and Condition===========================
+	checkoutpage.TermCondition().click();
+	
 
+	
+	log.info("========== Term and Condition Checked ==========");
+	Thread.sleep(5000);
+	//Checkout Button Clicked================================
+	checkoutpage.PlaceOrder().click();
+	log.info("========== Order Placed ==========");
+	
+
+	
+	
+	
+	
+	boolean successVisible = checkoutpage.CheckOutPageTitle().isDisplayed();
+	Assert.assertTrue(successVisible, "FAILED : Product search success message not displayed");
+	} catch(Exception e){
+		log.error("Error occurred during Login Test: " + e.getMessage());
+		// Make sure exception causes test failure
+		Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+			}
+
+}
 	
 
 
@@ -289,15 +364,4 @@ log.info("========== STEP 8: PLACE ORDER AND ORDER CONFIRMATION TEST STARTED ===
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-	
-
-}
+  

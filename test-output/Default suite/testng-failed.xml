@@ -5,8 +5,8 @@
     <classes>
       <class name="Test.EndToEndPurchaseTest">
         <methods>
+          <include name="testStep8_PlaceOrderAndValidateConfirmation"/>
           <include name="closer"/>
-          <include name="testStep6_QuantityAndPromoCode"/>
           <include name="openURL"/>
         </methods>
       </class> <!-- Test.EndToEndPurchaseTest -->
